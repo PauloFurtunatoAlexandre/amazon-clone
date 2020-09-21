@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import SearchIcon from "@material-ui/icons/Search";
-import ShoppingBasket from "@material-ui/icons/ShoppingBasket";
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import "./Header.scss";
 
 const Header = () => {
@@ -45,14 +45,16 @@ const Header = () => {
                     </div>
                 </Link>
             </div>
-            <Link className="header__link" to="/checkout">
-                <div className="header__optionBasket">
-                    <ShoppingBasket />
-                    <span className="header__optionLineTwo header__basketCount">
-                        0
-                    </span>
-                </div>
-            </Link>
+            <div className="header__nav">
+                <Link className="header__link" to="/checkout">
+                    <div className="header__optionCart">
+                        <ShoppingCartIcon />
+                        <span className="header__optionLineTwo header__cartCount">
+                            0
+                        </span>
+                    </div>
+                </Link>
+            </div>
         </div>
     );
 };

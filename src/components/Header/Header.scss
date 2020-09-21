@@ -3,69 +3,79 @@
     background-color: #131921;
     display: flex;
     z-index: 100;
-}
 
-.header__logo {
-    cursor: pointer;
-    margin: 0 20px;
-    margin-top: 18px;
-    width: 100px;
-}
+    .header__logo {
+        cursor: pointer;
+        margin: 0 20px;
+        margin-top: 18px;
+        width: 100px;
+        flex: 1;
+    }
 
-.header__optionBasket {
-    display: flex;
-    align-items: center;
-}
+    .header__search {
+        display: flex;
+        flex: 6;
 
-.header__basketCount {
-    margin-left: 10px;
-    margin-right: 10px;
-}
+        .header__searchIcon {
+            background: #cd9042;
+            border-radius: 0 6px 6px 0;
+            cursor: pointer;
+            height: 22px !important;
+            padding: 5px;
+        }
 
-.header__nav {
-    display: flex;
-    justify-content: space-evenly;
-}
+        .header__searchInput {
+            border: none;
+            border-radius: 6px 0 0 6px;
+            height: 12px;
+            padding: 16px 10px;
+            width: 100%;
+        }
+    }
 
-.header__link {
-    color: #ffffff;
-    text-decoration: none;
-}
+    .header__nav {
+        border: 1px solid #131921;
+        display: flex;
+        flex: 1;
+        justify-content: space-evenly;
+        margin: 8px;
+        padding: 8px;
 
-.header__option {
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-    margin-right: 10px;
-}
+        &:hover {
+            border: 1px solid #fff;
+        }
 
-.header__optionLineOne {
-    font-size: 10px;
-    font-weight: 100;
-}
+        .header__link {
+            color: #ffffff;
+            text-decoration: none;
 
-.header__optionLineTwo {
-    font-size: 13px;
-    font-weight: 800;
-}
+            .header__optionCart {
+                display: flex;
+                align-items: center;
+                border: 1px solid #131921;
+            }
 
-.header__search {
-    display: flex;
-    flex: 1;
-}
+            .header__option {
+                display: flex;
+                flex-direction: column;
+                margin-left: 10px;
+                margin-right: 10px;
 
-.header__searchInput {
-    border: none;
-    border-radius: 6px 0 0 6px;
-    height: 12px;
-    padding: 16px 10px;
-    width: 100%;
-}
+                .header__optionLineOne {
+                    font-size: 10px;
+                    font-weight: 100;
+                }
 
-.header__searchIcon {
-    background: #cd9042;
-    border-radius: 0 6px 6px 0;
-    cursor: pointer;
-    height: 22px !important;
-    padding: 5px;
+                .header__optionLineTwo {
+                    font-size: 13px;
+                    font-weight: 800;
+                }
+
+                .header__cartCount {
+                    margin-left: 10px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
 }
