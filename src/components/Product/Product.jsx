@@ -2,6 +2,9 @@ import React from "react";
 import "./Product.scss";
 
 const Product = ({ id, title, image, price, rating }) => {
+    const addToCart = () => {
+        
+    }
     return (
         <div className="product">
             <img src={image} alt="" />
@@ -19,7 +22,7 @@ const Product = ({ id, title, image, price, rating }) => {
                         ))}
                 </div>
             </div>
-            <button>Add to Basket</button>
+            <button onClick={() => addToCart}>Add to Basket</button>
         </div>
     );
 };
