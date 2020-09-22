@@ -12,7 +12,7 @@ const Home = () => {
             />
             <div className="home__row">
                 <Product
-                    id={"9281323"}
+                    id={"1"}
                     title={"La Sportiva Sneakers - Men's Bushido II Running Shoe"}
                     image={
                         "https://m.media-amazon.com/images/I/41fD3JYh-oL._AC_SY200_.jpg"
@@ -21,7 +21,7 @@ const Home = () => {
                     rating={4}
                 />
                 <Product
-                    id={"9281326"}
+                    id={"2"}
                     title={"Canon PowerShot SX530 Digital Camera w/ 50X Optical Zoom - Wi-Fi & NFC Enabled (Black)"}
                     image={
                         "https://m.media-amazon.com/images/I/61xeTmAQDNL._AC_UY218_.jpg"
@@ -30,7 +30,7 @@ const Home = () => {
                     rating={5}
                 />
                 <Product
-                    id={"9281327"}
+                    id={"3"}
                     title={"Oster BPCT02-BA0-000 6-Cup Glass Jar 2-Speed Toggle Beehive Blender, Brushed Stainless"}
                     image={
                         "https://m.media-amazon.com/images/I/41wHKSZI6kL._AC_UY218_.jpg"
@@ -41,7 +41,7 @@ const Home = () => {
             </div>
             <div className="home__row">
                 <Product
-                    id={"9281328"}
+                    id={"4"}
                     title={"$25 PlayStation Store Gift Card [Digital Code]"}
                     image={
                         "https://m.media-amazon.com/images/I/71mZxbOlakL._AC_UY218_.jpg"
@@ -50,7 +50,7 @@ const Home = () => {
                     rating={4}
                 />
                 <Product
-                    id={"9281329"}
+                    id={"5"}
                     title={"Apple AirPods with Wireless Charging Case"}
                     image={
                         "https://m.media-amazon.com/images/I/710rzW2RGcL._AC_UY218_.jpg"
@@ -61,7 +61,7 @@ const Home = () => {
             </div>
             <div className="home__row">
                 <Product
-                    id={"9281330"}
+                    id={"6"}
                     title={
                         'Apple 15.4" MacBook Pro w/Touch Bar (Mid 2019), Intel Core i9-9880H 2.3GHz, 512GB PCI-E SSD, 16GB DDR4, 802.11ac, Space Gray (Renewed)'
                     }

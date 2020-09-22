@@ -1,12 +1,14 @@
 import React from "react";
+import "./Header.scss";
 import { Link } from "react-router-dom";
 import SearchIcon from "@material-ui/icons/Search";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
-import "./Header.scss";
 import { useStateValue } from "../StateProvider";
 
 const Header = () => {
-    const [{ cart }, dispatch] = useStateValue();
+    const [{ cart }] = useStateValue();
+
+    console.log("Current cart items: ", cart);
     return (
         <div className="header">
             <Link to="/">
@@ -52,7 +54,7 @@ const Header = () => {
                     <div className="header__optionCart">
                         <ShoppingCartIcon />
                         <span className="header__optionLineTwo header__cartCount">
-                            {cart.length}
+                            {cart?.length}
                         </span>
                     </div>
                 </Link>
