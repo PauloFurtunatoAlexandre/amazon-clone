@@ -12,10 +12,6 @@ const reducer = (state = initialState, action) => {
             };
 
         case "REMOVE_TO_CART":
-            // const newCartState = state.cart.filter(
-            //     (item) => item !== action.id
-            // );
-
             const newCartState = [...state.cart];
             newCartState.splice(action.id, 1);
             return {

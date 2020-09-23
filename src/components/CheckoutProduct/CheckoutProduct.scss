@@ -1,6 +1,7 @@
 .checkoutProduct {
-    display: flex;
     background: #fff;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.0125), 0 3px 6px rgba(0,0,0,0.0125);
+    display: flex;
     margin: 20px;
     padding: 20px;
 
@@ -11,7 +12,7 @@
     }
 
     .checkoutProduct__info {
-        padding: 0 20px;
+        padding: 0 30px;
 
         > button {
             background-color: #f0c14c;

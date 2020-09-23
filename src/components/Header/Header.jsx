@@ -56,6 +56,7 @@ const Header = () => {
                         <span className="header__optionLineTwo header__cartCount">
                             {cart?.length}
                         </span>
+                        <span className="header__optionLineThree">Cart</span>
                     </div>
                 </Link>
             </div>

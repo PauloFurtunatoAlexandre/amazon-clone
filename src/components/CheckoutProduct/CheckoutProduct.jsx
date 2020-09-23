@@ -12,6 +12,7 @@ export default function CheckoutProduct({ id, title, image, price, rating }) {
             id: id,
         });
     };
+
     return (
         <div className="checkoutProduct" key={id}>
             <img className="checkoutProduct__image" src={image} alt={title} />
