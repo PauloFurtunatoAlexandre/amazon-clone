@@ -7,7 +7,7 @@ const Home = () => {
         <div className="home">
             <img
                 className="home__image"
-                src="https://images-eu.ssl-images-amazon.com/images/G/01/kindle/journeys/MTc0Y2M5Y2Mt/MTc0Y2M5Y2Mt-ZTMzMTk5Yjct-w1500._CB406837584_.jpg"
+                src="https://images-na.ssl-images-amazon.com/images/G/01/digital/video/merch/2020/TV/BRND/BRND_MTH20_00000_GWBleedingHero_1500x600_Final_en-US_PVD5529_B._CB406173267_.jpg"
                 alt="homepage banner"
             />
             <div className="home__row">
@@ -17,7 +17,7 @@ const Home = () => {
                     image={
                         "https://m.media-amazon.com/images/I/41fD3JYh-oL._AC_SY200_.jpg"
                     }
-                    price={"45.99"}
+                    price={45.99}
                     rating={4}
                 />
                 <Product
@@ -26,7 +26,7 @@ const Home = () => {
                     image={
                         "https://m.media-amazon.com/images/I/61xeTmAQDNL._AC_UY218_.jpg"
                     }
-                    price={"199.00"}
+                    price={199.00}
                     rating={5}
                 />
                 <Product
@@ -35,7 +35,7 @@ const Home = () => {
                     image={
                         "https://m.media-amazon.com/images/I/41wHKSZI6kL._AC_UY218_.jpg"
                     }
-                    price={"56.90"}
+                    price={56.90}
                     rating={4}
                 />
             </div>
@@ -46,7 +46,7 @@ const Home = () => {
                     image={
                         "https://m.media-amazon.com/images/I/71mZxbOlakL._AC_UY218_.jpg"
                     }
-                    price={"25.00"}
+                    price={25.00}
                     rating={4}
                 />
                 <Product
@@ -55,7 +55,7 @@ const Home = () => {
                     image={
                         "https://m.media-amazon.com/images/I/710rzW2RGcL._AC_UY218_.jpg"
                     }
-                    price={"129.98"}
+                    price={129.98}
                     rating={5}
                 />
             </div>
@@ -68,7 +68,7 @@ const Home = () => {
                     image={
                         "https://m.media-amazon.com/images/I/41cJj6G7a1L._AC_UY218_.jpg"
                     }
-                    price={"1,898.00"}
+                    price={1898.00}
                     rating={5}
                 />
             </div>

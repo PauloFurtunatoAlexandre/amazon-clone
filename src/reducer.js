@@ -3,6 +3,12 @@ export const initialState = {
     user: null,
 };
 
+export const getCartTotal = (cart) => {
+    return cart?.reduce((acc, item) => {
+        return acc += item.price;
+    }, 0);
+};
+
 const reducer = (state = initialState, action) => {
     switch (action.type) {
         case "ADD_TO_CART":
@@ -18,6 +24,7 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 cart: newCartState,
             };
+
         default:
             return { ...state };
     }
