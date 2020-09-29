@@ -5,12 +5,17 @@ export const initialState = {
 
 export const getCartTotal = (cart) => {
     return cart?.reduce((acc, item) => {
-        return acc += item.price;
+        return (acc += item.price);
     }, 0);
 };
 
 const reducer = (state = initialState, action) => {
     switch (action.type) {
+        case "SET_USER":
+            return {
+                ...state,
+                user: action.user,
+            };
         case "ADD_TO_CART":
             return {
                 ...state,
@@ -18,13 +23,29 @@ const reducer = (state = initialState, action) => {
             };
 
         case "REMOVE_TO_CART":
+            // const newCartState = [...state.cart];
+            // const itemIndex = state.cart.indexOf(action.id);
+            // newCartState.splice(itemIndex, 1);
+            // return {
+            //     ...state,
+            //     cart: newCartState,
+            // };
+
+            // return {
+            //     ...state,
+            //     cart: [...state.cart.filter(item => item.id !== action.id)]
+            // }
+
             const newCartState = [...state.cart];
-            newCartState.splice(action.id, 1);
+            const idx = action.id;
+            const itemIndex = state.cart.findIndex((i = idx) =>
+                console.log(i)
+            );
+            newCartState.splice(itemIndex, 1);
             return {
                 ...state,
                 cart: newCartState,
             };
-
         default:
             return { ...state };
     }

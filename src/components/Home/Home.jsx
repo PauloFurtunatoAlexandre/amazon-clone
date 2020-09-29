@@ -12,7 +12,7 @@ const Home = () => {
             />
             <div className="home__row">
                 <Product
-                    id={"1"}
+                    id={1}
                     title={"La Sportiva Sneakers - Men's Bushido II Running Shoe"}
                     image={
                         "https://m.media-amazon.com/images/I/41fD3JYh-oL._AC_SY200_.jpg"
@@ -21,7 +21,7 @@ const Home = () => {
                     rating={4}
                 />
                 <Product
-                    id={"2"}
+                    id={2}
                     title={"Canon PowerShot SX530 Digital Camera w/ 50X Optical Zoom - Wi-Fi & NFC Enabled (Black)"}
                     image={
                         "https://m.media-amazon.com/images/I/61xeTmAQDNL._AC_UY218_.jpg"
@@ -30,7 +30,7 @@ const Home = () => {
                     rating={5}
                 />
                 <Product
-                    id={"3"}
+                    id={3}
                     title={"Oster BPCT02-BA0-000 6-Cup Glass Jar 2-Speed Toggle Beehive Blender, Brushed Stainless"}
                     image={
                         "https://m.media-amazon.com/images/I/41wHKSZI6kL._AC_UY218_.jpg"
@@ -41,7 +41,7 @@ const Home = () => {
             </div>
             <div className="home__row">
                 <Product
-                    id={"4"}
+                    id={4}
                     title={"$25 PlayStation Store Gift Card [Digital Code]"}
                     image={
                         "https://m.media-amazon.com/images/I/71mZxbOlakL._AC_UY218_.jpg"
@@ -50,7 +50,7 @@ const Home = () => {
                     rating={4}
                 />
                 <Product
-                    id={"5"}
+                    id={5}
                     title={"Apple AirPods with Wireless Charging Case"}
                     image={
                         "https://m.media-amazon.com/images/I/710rzW2RGcL._AC_UY218_.jpg"
@@ -68,7 +68,7 @@ const Home = () => {
                     image={
                         "https://m.media-amazon.com/images/I/41cJj6G7a1L._AC_UY218_.jpg"
                     }
-                    price={1898.00}
+                    price={1898.99}
                     rating={5}
                 />
             </div>
