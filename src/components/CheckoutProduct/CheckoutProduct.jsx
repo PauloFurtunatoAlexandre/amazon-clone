@@ -28,7 +28,7 @@ export default function CheckoutProduct({ id, title, image, price, rating }) {
                             <span role="img">⭐</span>
                         ))}
                 </div>
-                <button onClick={removeFromCart}>Remove from cart</button>
+                <button onClick={(e) => removeFromCart(id)}>Remove from cart</button>
             </div>
         </div>
     );

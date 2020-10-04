@@ -37,10 +37,8 @@ const reducer = (state = initialState, action) => {
             // }
 
             const newCartState = [...state.cart];
-            const idx = action.id;
-            const itemIndex = state.cart.findIndex((i = idx) =>
-                console.log(i)
-            );
+            const itemIndex = state.cart.findIndex(p => p.id === action.id);
+            console.log(itemIndex, action.id);
             newCartState.splice(itemIndex, 1);
             return {
                 ...state,
